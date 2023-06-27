@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" charset="UTF-8" >
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+        <script type="text/javascript" src="countryGuessr.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌏</text></svg>">
+        <title>CountryGuessr</title>
+    </head>
+
+    <body>
+        <p class="logo" onclick="loadMenu()">Country<span class="logoColour">Guessr</span></p>
+        <div id="menu" class="menu">
+            <div class="menuItem" onclick="loadEuropeTable()">Europe</div>
+            <div class="menuItem" onclick="loadAsiaTable()">Asia</div>
+            <div class="menuItem" onclick="loadAfricaTable()">Africa</div>
+            <div class="menuItem" onclick="loadOceaniaTable()">Oceania</div>
+            <div class="menuItem" onclick="loadNATable()">North America</div>
+            <div class="menuItem" onclick="loadSATable()">South America</div>
+        </div>
+
+        <div id="game" class="game">
+            <div class="scorebar" id="scorebar">
+                <ul id="scoreBarList" class="scoreBarList">
+                    <span id="score" class="scoreBarItem"></span>
+                    <span id="regionTitle" class="scoreBarItem"></span>
+                </ul>
+                
+            </div>
+            <!--Europe-->
+            <div class="countryGrid" id="europeGrid">
+                <div class="countryInput">
+                    <input type="text" id="europeInput">
+                    <button onclick="checkEurope()" id="europeBtn">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </button>
+                </div>
+                <table id="europe">
+                </table>
+                
+            </div>
+
+            <!--Asia-->
+            <div class="countryGrid" id="asiaGrid">
+                <div class="countryInput">
+                    <input type="text" id="asiaInput">
+                    <button onclick="checkAsia()" id="asiaBtn">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </button>
+                </div>
+                <table id="asia">
+                </table>
+                
+            </div>
+
+            <!--Africa-->
+            <div class="countryGrid" id="africaGrid">
+                <div class="countryInput">
+                    <input type="text" id="africaInput">
+                    <button onclick="checkAfrica()" id="africaBtn">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </button>
+                </div>
+                <table id="africa">
+                </table>
+                
+            </div>
+
+            <!--Oceania-->
+            <div class="countryGrid" id="oceaniaGrid">
+                <div class="countryInput">
+                    <input type="text" id="oceaniaInput">
+                    <button onclick="checkOceania()" id="oceaniaBtn">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </button>
+                </div>
+                <table id="oceania">
+                </table>
+                
+            </div>
+
+            <!--North America-->
+            <div class="countryGrid" id="naGrid">
+                <div class="countryInput">
+                    <input type="text" id="naInput">
+                    <button onclick="checkNA()" id="naBtn">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </button>
+                </div>
+                <table id="na">
+                </table>
+                
+            </div>
+
+            <!--South America-->
+            <div class="countryGrid" id="saGrid">
+                <div class="countryInput">
+                    <input type="text" id="saInput">
+                    <button onclick="checkSA()" id="saBtn">
+                        <span class="material-symbols-outlined">
+                        search
+                        </span>
+                    </button>
+                </div>
+                <table id="sa">
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
